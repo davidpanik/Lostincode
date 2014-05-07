@@ -44,9 +44,20 @@ h2 {
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
+h3 {
+	color: #0094FF;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 1.1em;
+	line-height: 1.3em;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
 article {
 	width: 100%;
-	max-width: 500px;
+	max-width: 600px;
 	float: right;
 }
 
