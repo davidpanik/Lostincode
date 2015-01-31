@@ -22,6 +22,11 @@ body {
 	color: #404040;
 }
 
+body.profile2 {
+	background-color: #909090;
+	background-image: url(../img/profile_2.jpg);
+}
+
 h1 {
 	color: #0094FF;
 	font-weight: bold;
