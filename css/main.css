@@ -1,7 +1,7 @@
 .selfClearing:after {
-	content: " "; 
-	display: block; 
-	height: 0; 
+	content: " ";
+	display: block;
+	height: 0;
 	clear: both;
 	visibility: hidden;
 }
@@ -28,7 +28,7 @@ body.profile2 {
 }
 
 h1 {
-	color: #0094FF;
+	color: #0277BD;
 	font-weight: bold;
 	margin-top: 60px;
 	margin-bottom: 30px;
@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-	color: #0094FF;
+	color: #0277BD;
 	margin-bottom: 15px;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -50,7 +50,7 @@ h2 {
 }
 
 h3 {
-	color: #0094FF;
+	color: #0277BD;
 	margin-top: 20px;
 	margin-bottom: 15px;
 	font-weight: bold;
@@ -84,7 +84,7 @@ p {
 }
 
 a {
-	color: #0094FF;
+	color: #0277BD;
 	text-decoration: none;
 }
 
