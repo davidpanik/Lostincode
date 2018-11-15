@@ -1,8 +1,20 @@
 @import 'reset.css';
 @import url('https://fonts.googleapis.com/css?family=Niramit|Patua+One');
 
+:root {
+    --color-background: #30415D;
+    --color-section: #eee;
+    --color-text: #000;
+    --color-title: #30415D;
+    --color-link: #8EAEBD;
+    --color-button: #8EAEBD;
+    --color-highlight: #CF6766;
+}
+
+
 body {
-    background: black;
+    background: var(--color-background);
+    background-image: url(../img/background-noise.png);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,18 +29,33 @@ main {
     margin: 2em;
 }
 
+main:before {
+    display: block;
+    content: ' ';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
 h1,
 h2,
 h3,
 h4 {
     letter-spacing: 0.1em;
     font-family: 'Patua One', cursive;
+    color: var(--color-title);
 }
 
 header,
 section {
-    background: white;
+    background-color: var(--color-section);
+    background-image: url(../img/section-noise.png);
     padding: 2em;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
 }
 
 header {
@@ -51,6 +78,7 @@ header {
         width: 100%;
         margin-bottom: 1em;
         max-width: 200px;
+        box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.1);
     }
 
     header ul li {
@@ -60,13 +88,14 @@ header {
 
         header ul li a {
             text-decoration: none;
-            color: #000;
+            color: var(--color-text);
             padding: 0 0.5em;
+            background: var(--color-button);
         }
 
         header ul li a:hover,
         header ul li a:focus {
-            background: #ccc;
+            background: var(--color-highlight);
         }
 
 section {
@@ -82,7 +111,7 @@ section {
 
     section a {
         text-decoration: none;
-        color: #000;
+        color: var(--color-text);
     }
 
     section p {
@@ -90,15 +119,14 @@ section {
     }
 
         section p a {
-            text-decoration-line: underline;
-            text-decoration-style: dotted;
-            text-decoration-color: #aaa;
+            text-decoration: none;
+            color: var(--color-button);
             transition: color 0.5 ease-out;
         }
 
         section p a:hover,
         section p a:focus {
-            color: #aaa;
+            color: var(--color-highlight);
         }
 
     section ul {
@@ -116,13 +144,18 @@ section {
             position: relative;
         }
 
+        section ul.images li {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+
         section ul.images img {
             margin-top: 33%;
         }
 
         section li a {
             display: block;
-            background: #ddd;
+            background: var(--color-button);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -138,7 +171,7 @@ section {
 
         section li a:hover,
         section li a:focus {
-            background: #ccc;
+            background: var(--color-highlight);
         }
 
         section ul img {
@@ -164,7 +197,7 @@ section {
 
     header ul li {
         display: block;
-        margin: 0 0 0.8em 0;
+        margin: 0 0 1.2em 0;
     }
 
     section {
