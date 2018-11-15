@@ -1,0 +1,83 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css?family=Niramit|Patua+One');
+
+body {
+    background: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Niramit', sans-serif;
+    letter-spacing: 0.001em;
+    line-height: 1.2;
+}
+
+main {
+    width: 100%;
+    min-height: 50vh;
+    margin: 2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 0.1em;
+    font-family: 'Patua One', cursive;
+}
+
+header,
+section {
+    background: white;
+    padding: 2em;
+}
+
+header {
+    text-align: center;
+    border-radius: 100px 0px 0px 0px;
+    margin-bottom: 1em;
+}
+
+header img {
+    border-radius: 50%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+section {
+    border-radius: 0px 0px 100px 0px;
+}
+
+section h3 {
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+section p {
+    margin-bottom: 0.5em;
+}
+
+section p a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+}
+
+@media (min-width: 600px) {
+    main {
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 250px auto;
+        grid-column-gap: 1em;
+        align-items: stretch;
+    }
+
+    header {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-height: 600px) {
+    body {
+        align-items: center;
+    }
+}
