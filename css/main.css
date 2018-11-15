@@ -43,7 +43,7 @@ header {
     }
 
     header h2 {
-        margin-bottom: 1.2em;
+        margin-bottom: 1.5em;
     }
 
     header img {
@@ -142,9 +142,17 @@ section {
         margin-bottom: 0;
     }
 
+    header h2 {
+        margin-bottom: 2em;
+    }
+
     header ul li {
         display: block;
         margin: 0 0 0.8em 0;
+    }
+
+    section {
+        min-height: 455px;
     }
 
     section h3 {
