@@ -37,91 +37,97 @@ header {
     margin-bottom: 1em;
 }
 
-header h1 {
-    font-size: 1.5em;
-    font-weight: bold;
-}
+    header h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
 
-header h2 {
-    margin-bottom: 1.2em;
-}
+    header h2 {
+        margin-bottom: 1.2em;
+    }
 
-header img {
-    border-radius: 50%;
-    width: 100%;
-    margin-bottom: 1em;
-}
+    header img {
+        border-radius: 50%;
+        width: 100%;
+        margin-bottom: 1em;
+        max-width: 200px;
+    }
 
-header ul li {
-    display: inline-block;
-    margin: 0 0.8em;
-}
+    header ul li {
+        display: inline-block;
+        margin: 0 0.8em;
+    }
 
-header ul li a {
-    text-decoration: none;
-    color: #000;
-}
+        header ul li a {
+            text-decoration: none;
+            color: #000;
+        }
 
 section {
     border-radius: 0px 0px 100px 0px;
 }
 
-section h3 {
-    font-weight: bold;
-    font-size: 2.5em;
-    margin-bottom: 0.7em;
-    text-align: center;
-}
+    section h3 {
+        font-weight: bold;
+        font-size: 2.5em;
+        margin-bottom: 0.7em;
+        text-align: center;
+    }
 
-section p {
-    margin-bottom: 0.5em;
-}
+    section p {
+        margin-bottom: 0.5em;
+    }
 
-section a {
-    color: #000;
-    text-decoration: none;
-    border-bottom: 1px dotted #000;
-}
+    section a {
+        color: #000;
+        text-decoration: none;
+        border-bottom: 1px dotted #000;
+    }
 
-section ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    align-items: stretch;
-}
+    section ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        align-items: stretch;
+    }
 
-section li {
-    height: 0;
-    padding-bottom: 100%;
-    text-align: center;
-    position: relative;
-}
+        section li {
+            height: 0;
+            padding-bottom: 100%;
+            text-align: center;
+            position: relative;
+        }
 
-section li a {
-    display: block;
-    background: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: none;
-    padding: 0.5em;
-    transition: background 0.5s ease-out;
-}
+        section ul.images li {
+            height: auto;
+            padding-bottom: 0
+        }
 
-section li a:hover,
-section li a:focus {
-    background: #ccc;
-}
+        section li a {
+            display: block;
+            background: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border: none;
+            padding: 0.5em;
+            transition: background 0.5s ease-out;
+        }
 
-section ul img {
-    width: 100%;
-}
+        section li a:hover,
+        section li a:focus {
+            background: #ccc;
+        }
+
+        section ul img {
+            width: 100%;
+        }
 
 @media (min-width: 600px) {
     main {
@@ -143,6 +149,12 @@ section ul img {
 
     section h3 {
         text-align: right;
+    }
+}
+
+@media (min-width: 760px) {
+    section ul {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
