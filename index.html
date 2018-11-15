@@ -92,49 +92,6 @@
 			ga('send', 'pageview');
 		</script>
 
-		<script>
-			(function() {
-				let styles = {
-					'background-color': 'black',
-					'font-size': '20px',
-					'padding': '1em',
-					'color': '#007F0E',
-					'margin': '-5px',
-					'text-shadow': '0px 0px 20px rgba(150, 255, 150, 0.8)'
-				};
-
-				let str = '';
-				for (var key in styles) {
-					str += `${key}: ${styles[key]};`
-				}
-
-				let messages = [
-					'Hello - have you come to look at my source-code?',
-					'You won\'t see much here.',
-					'Check out my projects on GitHub for some better examples.'
-				];
-
-				messages.forEach((message) => console.log(`%c${message}`, str));
-			}());
-
-			(function () {
-				function showTab(id) {
-					let sections = Array.from(document.getElementsByTagName('section'));
-					sections.forEach((element) => element.style.display = 'none');
-
-					id = id.replace('#', '');
-
-					document.getElementById(id).style.display = 'block';
-				}
-
-				showTab(location.hash ? location.hash : 'about');
-
-				window.addEventListener('hashchange', () => {
-					showTab(location.hash);
-				});
-
-
-			}());
-		</script>
+		<script src="./js/main.js"></script>
 	</body>
 </html>
